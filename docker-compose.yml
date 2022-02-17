@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  minecraft:
+    build:
+      context: .
+    volumes:
+      - ./server:/app
+    ports:
+      - 1234:25565
